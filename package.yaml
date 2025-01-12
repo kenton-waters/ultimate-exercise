@@ -1,17 +1,17 @@
 name:                ultimate-exercise
 version:             0.1.0.0
 github:              "kenton-waters/ultimate-exercise"
-license:             BSD-3-Clause
+license:             GPL-3
 author:              "Kenton Waters"
 maintainer:          "kenton.a.waters@gmail.com"
-copyright:           "2025-01-11"
+copyright:           "(c) 2025 Kenton Waters <kenton.a.waters@gmail.com>"
 
 extra-source-files:
 - README.md
 - CHANGELOG.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
+# synopsis:            Generate sheet music to improve sightreading, fretboard knowledge, and improvisation.
 # category:            Music
 
 # To avoid duplicated efforts in documentation and dealing with the
