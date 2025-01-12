@@ -4,4 +4,4 @@ import Output.LilyPond
 import Constants
 
 main :: IO ()
-main = invokeLilyPond lilyPondFileName
+main = generateScore lilyPondFileName lilyPondFileContents

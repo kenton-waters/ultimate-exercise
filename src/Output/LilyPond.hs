@@ -1,18 +1,31 @@
 module Output.LilyPond
-    ( invokeLilyPond
+    ( generateScore
     ) where
 
 import System.Process
 import Constants
 import Util
+import Control.Monad
 
 
-type FileName = String
+type Filename = String
+type Contents = String
 
-invokeLilyPond :: FileName -> IO ()
-invokeLilyPond lyFileName = do
-    validateLyFilename lyFileName
+generateScore :: Filename -> Contents -> IO ()
+generateScore lyFilename contents = do
+
+    unless (null contents) $  -- forces computation of lazy contents
+        writeFile (lilyPondDirPath++lyFilename) contents
+    
+    invokeLilyPond lyFilename
+
+
+invokeLilyPond :: Filename -> IO ()
+invokeLilyPond lyFilename = do
+
+    validateLyFilename lyFilename
 
     callCommand $
         "lilypond --output '"++outputPath++"' "
-            ++ lilyPondDirPath++lyFileName
+            ++ lilyPondDirPath++lyFilename
+
