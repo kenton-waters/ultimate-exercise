@@ -14,4 +14,4 @@ Generate sheet music to improve sightreading, fretboard knowledge, and improvisa
 * Invoke LilyPond
 
 ## Roadmap
-* Invoke lilypond??
+* Define tune format
