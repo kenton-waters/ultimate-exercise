@@ -10,5 +10,8 @@ Generate sheet music to improve sightreading, fretboard knowledge, and improvisa
 * GHC 9.4.8
 * haskell.haskell 2.4.4 (Haskell for Visual Studio Code)
 
+## Features
+* Invoke LilyPond
+
 ## Roadmap
-* Invoke lilypond
+* Invoke lilypond??

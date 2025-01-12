@@ -25,7 +25,8 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Models.Constants
+      Output.LilyPond
   other-modules:
       Paths_ultimate_exercise
   hs-source-dirs:

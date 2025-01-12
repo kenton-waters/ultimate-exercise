@@ -1,6 +1,7 @@
 module Main (main) where
 
-import Lib
+import Output.LilyPond
+import Models.Constants
 
 main :: IO ()
-main = invokeLilyPond "test.ly"
+main = invokeLilyPond lilyPondFileName
