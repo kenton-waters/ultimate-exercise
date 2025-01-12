@@ -3,11 +3,16 @@ module Output.LilyPond
     ) where
 
 import System.Process
-import Models.Constants
+import Constants
+import Util
+
 
 type FileName = String
 
 invokeLilyPond :: FileName -> IO ()
-invokeLilyPond lyFileName = callCommand $
-    "lilypond --output '"++outputPath++"' "
-        ++ lilyPondDirPath++lyFileName
+invokeLilyPond lyFileName = do
+    validateLyFilename lyFileName
+
+    callCommand $
+        "lilypond --output '"++outputPath++"' "
+            ++ lilyPondDirPath++lyFileName

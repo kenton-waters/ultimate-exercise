@@ -37,9 +37,11 @@ library:
   source-dirs: src
   dependencies:
   - process
+  - regex-base
+  - regex-pcre
 
 executables:
-  ultimate-exercise-exe:
+  ue:
     main:                Main.hs
     source-dirs:         app
     ghc-options:

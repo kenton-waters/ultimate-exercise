@@ -12,6 +12,9 @@ Generate sheet music to improve sightreading, fretboard knowledge, and improvisa
 
 ## Features
 * Invoke LilyPond
+* Sanitize filename
 
 ## Roadmap
+* Write string to file
+* Serialize notes
 * Define tune format
