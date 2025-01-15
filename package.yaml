@@ -39,6 +39,7 @@ library:
   - process
   - regex-base
   - regex-pcre
+  - liquidhaskell
 
 executables:
   ue:

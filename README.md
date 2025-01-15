@@ -2,13 +2,15 @@
 Generate sheet music to improve sightreading, fretboard knowledge, and improvisation.
 
 ## Dependencies
-* lilypond 2.24.4 (music engraving software)
+* lilypond 2.24.4 (music engraving software) on PATH
 * ghcup 0.1.40.0
 * haskell-language-server 2.9.0.1
 * Stack 3.1.1
 * cabal 3.12.1.0
 * GHC 9.4.8
 * haskell.haskell 2.4.4 (Haskell for Visual Studio Code)
+* liquidhaskell-0.9.4.7.0
+* Z3 4.13.0 on PATH
 
 ## Features
 * Invoke LilyPond
