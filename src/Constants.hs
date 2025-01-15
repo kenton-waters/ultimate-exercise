@@ -20,4 +20,4 @@ lilyPondFileName :: String
 lilyPondFileName = "test.ly"
 
 lilyPondFileContents :: String
-lilyPondFileContents = "{ \\time 2/4  \\clef bass  c4 c g g a a g2 d d d d d d d }"
+lilyPondFileContents = "\\version \"2.24.4\" \\new Voice \\with { \\remove Note_heads_engraver \\consists Completion_heads_engraver } { \\omit TupletNumber \\omit TupletBracket \\time 2/4  \\clef bass  \\tuplet 2/1 { c4. d } c \\tuplet 1/1 { g4 } g a a g2 d d d d d d d }"
