@@ -51,6 +51,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - ultimate-exercise
+    - liquidhaskell
 
 tests:
   ultimate-exercise-test:
